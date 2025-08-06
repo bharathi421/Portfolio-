@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharathi A | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    html, body {
+      min-height: 100%;
+      overflow: auto;
+    }
+
+    body {
+      
+      background-size: 400% 400%;
+        background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      overflow: hidden;
+      color: #111;
+      padding: 5rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+     .icon-background {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .floating-icon {
+      position: absolute;
+      width: 60px;
+      opacity: 0.15;
+      animation: float 12s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-40px) rotate(10deg);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+    }
+
+    .container {
+      width: 700px;
+      margin: 0 auto;
+       background: linear-gradient(135deg, #e0ffe0cc, #ccf2ffcc);
+      padding: 2rem;
+      border-radius: 30px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1s ease;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 100px;
+      object-fit: cover;
+      border: 3px solid #6a11cb;
+      margin: 0 auto 1rem;
+      display: block;
+      animation: zoomIn 2s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #6a11cb;
+      animation: fadeInUp 1s ease;
+    }
+
+    header h2 {
+      color: #ff6a00;
+      font-weight: 400;
+      margin-top: 0.5rem;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      margin-bottom: 2rem;
+      animation: fadeIn 2s ease;
+    }
+
+    h3 {
+      color: #6a11cb;
+      border-bottom: 2px solid #ff6a00;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: #ff6a00;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #ff6a00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+      transform: scale(1.05);
+    }
+    a {
+  color: blue; /* LinkedIn blue */
+  text-decoration: none;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.linkedin-logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+a {
+  color: #0A66C2; /* LinkedIn blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+.gmail-logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+a {
+  color: #4285F4; /* Gmail red */
+  text-decoration: none;
+  font-weight: bold;
+}
+.github-logo{
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+a {
+  color: #4285F4; /* Gmail red */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="IMG_5828 2.jpg" alt="Profile Photo" class="profile-pic" />
+      <h1>Bharathi A</h1>
+      <h2>Aspiring Software Developer | BCA Student</h2>
+    </header>
+
+    <section>
+      <h3>About Me</h3>
+      <p style="text-indent: 40px;">A highly motivated BCA student with a strong interest in web development and iOS app design. Seeking an opportunity to apply my technical skills, learn from real-world projects, and grow as a software developer in a professional environment.
+. I’m passionate about learning new technologies and building creative projects. Currently aiming for placements in top companies like Wipro, TCS, and Google.</p>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div>C Programming</div>
+        <div>Python</div>
+        <div>JavaScript</div>
+        <div>Java</div>
+        <div>SwiftUi (basics)</div>
+        <div>Figma (basics)</div>
+        <div>Web Development</div>
+        <div>MySQL</div>
+        <div>Team Coordination</div>
+        <div>Communication</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <p>Bachelor of Computer Applications (BCA)<br>VLB Janakiammal College of Arts and Science, Kovaipudur, Coimbatore</p>
+      <p>Graduation Year: 2026</p>
+    </section>
+
+    <section>
+      <h3>Certifications</h3>
+      <ul>
+        <li>Full-Stack Development - IBM Cloud -    <a href="ibmcertificate.png" target="_blank" >
+     View Certificate
+      </a></a></li><br>
+        <li>JavaScript Bootcamp - Lets Upgrade -  <a href="Js.png" target="_blank">
+     View Certificate</a></li><br>
+        <li>AI Intern- Refinement Software Solutions -  <a href="AI itern.png" target="_blank">
+     View Certificate</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Extra & Co-Curricular Activities</h3>
+      <ul>
+        <li>I have served as the<b> Placement Coordinator </b> and <b> Poster Making Event Coordinator </b> in my department.</li>
+        <li>Participated in coding hackathons and workshops</li>
+        <li>Worked on multiple academic and self-learning projects</li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h3>Languages</h3>
+      <ul>
+        <li>Tamil (Fluent)</li>
+        <li>English (Fluent)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Strengths</h3>
+      <ul>
+        <li>Quick Learner</li>
+        <li>Think Deeply & Creatively</li>
+        <li>Curious about New Technologies</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Listening to Songs</li>
+        <li>Watching Movies</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Contact</h3>
+   <p>
+      <a href="bharathiannadurai515@gmail.com" target="_blank">
+    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
+         alt="Gmail Logo" class="gmail-logo">
+    bharathiannadurai515@gmail.com
+
+  </a><br><br>
+  <a href="https://www.linkedin.com/in/bharathi-a-05b32928a" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+         alt="LinkedIn Logo" class="linkedin-logo">
+    LinkedIn : www.linkedin.com/in/bharathi-a-05b32928a
+  </a>
+  
+  <br><br>
+     <a href="https://github.com/bharathi421" target="_blank" style="text-decoration: none; color: #000; font-weight: semibold;">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+       alt="GitHub Logo"  style="width:24px; height:24px; vertical-align: middle; margin-right: 8px;" >
+  GitHub : https://github.com/bharathi421
+</a>  <br> <br> 
+<ul>
+  <li><b>8098030381</b></li>
+  <br>
+<li>13/134 Ayamarathur,  Sinnappampatti,
+Vellalapuram ,<br> Edapadi,
+Salem-636306.</li>
+</ul>
+
+
+    </section>
+  </div>
+</body>
+ <div class="icon-background">
+    <img src="https://cdn-icons-png.flaticon.com/128/1055/1055687.png" class="floating-icon" style="top:10%; left:15%;" />
+    <img src="https://cdn-icons-png.flaticon.com/128/1055/1055672.png" class="floating-icon" style="top:40%; left:75%; animation-delay: 2s;" />
+    <img src="https://cdn-icons-png.flaticon.com/128/1055/1055666.png" class="floating-icon" style="top:70%; left:25%; animation-delay: 4s;" />
+   
+</div>
+
+  </div>
+
+</html>
