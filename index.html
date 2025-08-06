@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bharathi A | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -16,20 +15,18 @@
 
     html, body {
       min-height: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     body {
-      
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
       background-size: 400% 400%;
-        background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-      overflow: hidden;
       color: #111;
       padding: 5rem;
       animation: fadeIn 1.5s ease;
     }
 
-     .icon-background {
+    .icon-background {
       width: 100%;
       height: 100%;
       z-index: 0;
@@ -44,21 +41,16 @@
     }
 
     @keyframes float {
-      0% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-40px) rotate(10deg);
-      }
-      100% {
-        transform: translateY(0px) rotate(0deg);
-      }
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-40px) rotate(10deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
     }
 
     .container {
-      width: 700px;
+      width: 100%;
+      max-width: 700px;
       margin: 0 auto;
-       background: linear-gradient(135deg, #e0ffe0cc, #ccf2ffcc);
+      background: linear-gradient(135deg, #e0ffe0cc, #ccf2ffcc);
       padding: 2rem;
       border-radius: 30px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -155,51 +147,48 @@
       background-color: #e65c00;
       transform: scale(1.05);
     }
+
     a {
-  color: blue; /* LinkedIn blue */
-  text-decoration: none;
-  
-}
+      color: #0A66C2;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-a:hover {
-  text-decoration: underline;
-}
-.linkedin-logo {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-a {
-  color: #0A66C2; /* LinkedIn blue */
-  text-decoration: none;
-  font-weight: bold;
-}
-.gmail-logo {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-a {
-  color: #4285F4; /* Gmail red */
-  text-decoration: none;
-  font-weight: bold;
-}
-.github-logo{
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-a {
-  color: #4285F4; /* Gmail red */
-  text-decoration: none;
-  font-weight: bold;
-}
+    .linkedin-logo,
+    .gmail-logo,
+    .github-logo {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
 
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
 
+      .container {
+        padding: 1.5rem;
+        border-radius: 20px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header h2 {
+        font-size: 1rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+    }
   </style>
 </head>
 <body>
@@ -212,24 +201,15 @@ a {
 
     <section>
       <h3>About Me</h3>
-      <p style="text-indent: 40px;">A highly motivated BCA student with a strong interest in web development and iOS app design. Seeking an opportunity to apply my technical skills, learn from real-world projects, and grow as a software developer in a professional environment.
-. I’m passionate about learning new technologies and building creative projects. Currently aiming for placements in top companies like Wipro, TCS, and Google.</p>
+      <p style="text-indent: 40px;">A highly motivated BCA student with a strong interest in web development and iOS app design. Seeking an opportunity to apply my technical skills, learn from real-world projects, and grow as a software developer in a professional environment. I’m passionate about learning new technologies and building creative projects. Currently aiming for placements in top companies like Wipro, TCS, and Google.</p>
     </section>
 
     <section>
       <h3>Skills</h3>
       <div class="skills-grid">
-        <div>C Programming</div>
-        <div>Python</div>
-        <div>JavaScript</div>
-        <div>Java</div>
-        <div>SwiftUi (basics)</div>
-        <div>Figma (basics)</div>
-        <div>Web Development</div>
-        <div>.NET</div>
-        <div>MySQL</div>
-        <div>Team Coordination</div>
-        <div>Communication</div>
+        <div>C Programming</div><div>Python</div><div>JavaScript</div><div>Java</div>
+        <div>SwiftUi (basics)</div><div>Figma (basics)</div><div>Web Development</div>
+        <div>.NET</div><div>MySQL</div><div>Team Coordination</div><div>Communication</div>
       </div>
     </section>
 
@@ -242,79 +222,57 @@ a {
     <section>
       <h3>Certifications</h3>
       <ul>
-        <li>Full-Stack Development - IBM Cloud -    <a href="ibmcertificate.png" target="_blank" >
-     View Certificate
-      </a></a></li>
-        <li>JavaScript Bootcamp - Lets Upgrade -  <a href="Js.png" target="_blank">
-     View Certificate</a></li>
-        <li>AI Intern- Refinement Software Solutions -  <a href="AI itern.png" target="_blank">
-     View Certificate</a></li>
+        <li>Full-Stack Development - IBM Cloud - <a href="ibmcertificate.png" target="_blank">View Certificate</a></li>
+        <li>JavaScript Bootcamp - Lets Upgrade - <a href="Js.png" target="_blank">View Certificate</a></li>
+        <li>AI Intern - Refinement Software Solutions - <a href="AI itern.png" target="_blank">View Certificate</a></li>
       </ul>
     </section>
 
     <section>
-      <h3>Leadership Roles  & Extracurricular Activities </h3>
+      <h3>Leadership Roles & Extracurricular Activities</h3>
       <ul>
-        <li><b>Placement Coordinator</b> of my Class – BCA Department
-		Coordinated placement-related activities, communicated with recruiters, and supported students in placement preparation.</li><br>
-        <li><b>Poster Making Event Coordinator </b> - Intra-Department Meet 
-		Organized and supervised the poster making competition, managed event scheduling, participant coordination, and ensured smooth execution.</li><br>
-        <li>Attended a workshop on "Creating Dynamic Webpages using .NET Technologies", gaining hands-on experience in ASP.NET, C#, and web application development.</li><br>
-        <li>Worked on multiple academic and self-learning projects</li>
+        <li><b>Placement Coordinator</b> – BCA Department: Coordinated placement-related activities and supported students in placement prep.</li><br>
+        <li><b>Poster Making Event Coordinator</b>: Managed event scheduling, participant coordination, and smooth execution.</li><br>
+        <li>Attended .NET Workshop – learned ASP.NET, C# and web app development.</li><br>
+        <li>Worked on multiple academic and self-learning projects.</li>
       </ul>
     </section>
-
 
     <section>
-      <h3>Projects </h3>
+      <h3>Projects</h3>
       <ul>
-        <li>Pooja Shop Website, HTML, CSS, Built a spiritual-themed multi-page website. Styled product cards and layout with Flexbox. Designed a contact form with input fields. - <a href="pooja.html">pooja shop</a></li><br>
-        <li>Due to my strong interest in web design, I have developed several mini projects, including a calculator model, a Facebook-style registration page, and other interactive web pages using HTML, CSS, and JavaScript.
-</li>
+        <li>Pooja Shop Website using HTML & CSS – <a href="pooja.html">View Project</a></li><br>
+        <li>Developed a calculator model, Facebook-style registration page, and other interactive mini projects using HTML/CSS/JavaScript.</li>
       </ul>
     </section>
-
 
     <section>
       <h3>Contact</h3>
-   <p>
-      <a href="bharathiannadurai515@gmail.com" target="_blank">
-    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
-         alt="Gmail Logo" class="gmail-logo">
-    bharathiannadurai515@gmail.com
-
-  </a><br><br>
-  <a href="https://www.linkedin.com/in/bharathi-a-05b32928a" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-         alt="LinkedIn Logo" class="linkedin-logo">
-    LinkedIn : www.linkedin.com/in/bharathi-a-05b32928a
-  </a>
-  
-  <br><br>
-     <a href="https://github.com/bharathi421" target="_blank" style="text-decoration: none; color: #000; font-weight: semibold;">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
-       alt="GitHub Logo"  style="width:24px; height:24px; vertical-align: middle; margin-right: 8px;" >
-  GitHub : https://github.com/bharathi421
-</a>  <br> <br> 
-<ul>
-  <li><b>8098030381</b></li>
-  <br>
-<li>13/134 Ayamarathur,  Sinnappampatti,
-Vellalapuram ,<br> Edapadi,
-Salem-636306.</li>
-</ul>
-
-
+      <p>
+        <a href="mailto:bharathiannadurai515@gmail.com">
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail Logo" class="gmail-logo">
+          bharathiannadurai515@gmail.com
+        </a><br><br>
+        <a href="https://www.linkedin.com/in/bharathi-a-05b32928a" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="linkedin-logo">
+          LinkedIn: www.linkedin.com/in/bharathi-a-05b32928a
+        </a><br><br>
+        <a href="https://github.com/bharathi421" target="_blank">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+          GitHub: https://github.com/bharathi421
+        </a><br><br>
+      </p>
+      <ul>
+        <li><b>Phone:</b> 8098030381</li><br>
+        <li>13/134 Ayamarathur, Sinnappampatti,<br>Vellalapuram, Edapadi, Salem-636306.</li>
+      </ul>
     </section>
   </div>
-</body>
- <div class="icon-background">
+
+  <div class="icon-background">
     <img src="https://cdn-icons-png.flaticon.com/128/1055/1055687.png" class="floating-icon" style="top:10%; left:15%;" />
     <img src="https://cdn-icons-png.flaticon.com/128/1055/1055672.png" class="floating-icon" style="top:40%; left:75%; animation-delay: 2s;" />
     <img src="https://cdn-icons-png.flaticon.com/128/1055/1055666.png" class="floating-icon" style="top:70%; left:25%; animation-delay: 4s;" />
-   
-</div>
-
   </div>
-
+</body>
 </html>
